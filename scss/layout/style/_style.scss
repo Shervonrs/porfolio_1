@@ -1,0 +1,273 @@
+
+.site-content {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#header {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  @media screen and(max-width: 550px) and (orientation: portrait){
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+  &.start #titolo_sito p{
+    &:first-child span {
+      animation-delay: 2s;
+    }
+    &:nth-child(2) span {
+      animation-delay: 2.1s;
+    }
+    &:nth-child(3) span {
+      animation-delay: 2.2s;
+    }
+    &:last-child span {
+      animation-delay: 2.3s;
+    };
+    & span {
+      display: block;
+      transform: translateY(8vw);
+      animation: load_after .8s forwards;
+      @media screen and (max-width: 550px) and (orientation: portrait){
+        transform: translateY(12vw);
+      }
+    }
+  }
+}
+
+#titolo_sito {
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  color: #ddd;
+  letter-spacing: -1px;
+  line-height: 28px;
+  margin: 0;
+  position: absolute;
+  top: 85px;
+  right: 6vw;
+  text-align: right;
+  margin-right: 35px;
+  @media screen and (max-width: 1440px){
+    top: 65px;
+  }
+  @media screen and (max-width: 550px) and (orientation: portrait){
+    width: 80vw;
+    font-size: 10vw;
+    left: 30px;
+    top: 30px;
+    text-align: left;
+  }
+  & p {
+    display: block;
+    position: relative;
+    display: block;
+    margin: 0;
+    height: 33px;
+    overflow: hidden;
+    @media screen and (max-width: 550px) and (orientation: portrait){
+      height: 10.6vw;
+      line-height: 7vw;
+    }
+    & span  {
+      @media screen and (max-width: 550px) and (orientation: portrait){
+        transform: translateY(12vw);
+      }
+    }
+  }
+}
+
+@keyframes load_after {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#image_cuore {
+  position: absolute;
+  width: 50vw;
+  height: 40vw;
+  left: 0;
+  right: 0;
+  top: 75px;
+  margin: auto;
+  @media screen and (max-width: 550px) and (orientation: portrait){
+    width: 70vw;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  @media screen and (max-width: 550px) and (orientation: portrait){
+    top:0;
+    width: 70%;
+  }
+  & img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: .2;
+    @media screen and (max-width: 550px) and (orientation: portrait){
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      &:first-child {
+        opacity: .3;
+        animation: op 15s infinite;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        animation: op_2 15s infinite;
+      }
+      &:last-child {
+        opacity: 0;
+        animation: op_3 15s infinite;
+      }
+    }
+  }
+}
+
+@keyframes op {
+  10%,90% {
+    opacity: .3;
+    transform: skewY(0) translateY(0);
+  }
+  20%,80% {
+    opacity: 0;
+    transform: skewY(5deg) translateY(40px);
+  }
+}
+
+@keyframes op_2 {
+  20%,50% {
+    opacity: 0;
+    transform: skewY(5deg) translateY(40px);
+  }
+  30%,40% {
+    opacity: .3;
+    transform: skewY(0) translateY(0);
+  }
+}
+
+@keyframes op_3 {
+  50%, 80% {
+    opacity: 0;
+    transform: skewY(5deg) translateY(40px);
+  }
+  60%, 70% {
+    opacity: .3;
+    transform: skewY(0) translateY(0);
+  }
+}
+
+.k95, #logo {
+  position: absolute;
+  display: block
+}
+
+#logo {
+  top: 65px;
+  left: 60px;
+  width: 50vw;
+  height: 30vw;
+  z-index: 15;
+  @media screen and (max-width: 1440px){
+    top: 45px;
+  }
+  @media screen and (max-width: 550px) and (orientation: portrait){
+    opacity: 0;
+    animation: none;
+  }
+  & img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #logo img, .work img {
+    display: block;
+  }
+}
+
+#header.start #email,
+#header.start #k95,
+#header.start #logo,
+#header.start #social {
+  opacity: 0;
+  animation: opacity_a 1s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes opacity_a {
+  100% {
+    opacity: 1;
+  }
+}
+
+#email {
+  position: absolute;
+  bottom: 78px;
+  left: 50px;
+  font-size: 16px;
+  color: #333;
+  mix-blend-mode: multiply;
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  height: -150px;
+  z-index: 15;
+  @media screen and (max-width: 110px){
+    bottom: 48px;
+    left: 30px;
+  }
+  @media screen and (max-width: 550px) and (orientation: portrait){
+    left: 35px;
+    bottom: 30px;
+  }
+  & span {
+    display: inline-block;
+    width: 7vw;
+    height: 1px;
+    background: #333;
+    margin-right: 10px;
+    vertical-align: middle;
+    animation: width_line .5s forwards;
+    animation-delay: 4.7s;
+    margin-left: 0;
+    transition: margin-left .5s;
+  }
+  & a  {
+    color: #333;
+  }
+}
+
+#header.start #email span {
+  display: inline-block;
+  width: 7vw;
+  height: 1px;
+  background: #333;
+  margin-right: 10px;
+  vertical-align: middle;
+  animation: width_line .5s forwards;
+  margin-left: 0;
+  transition: margin-left .5s;
+}
+
+@media screen and (max-width: 550px) and (orientation: portrait){
+  #email span,
+  #header.start #email span {
+    display: none;
+  }
+}

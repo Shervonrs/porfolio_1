@@ -10,19 +10,426 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script  src="https://www.danilodemarco.com/wp-content/themes/personal/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script scr="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://www.danilodemarco.com/wp-content/themes/personal/js/animation.gsap.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://www.danilodemarco.com/wp-content/themes/personal/js/smooth-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
 
+    <script src="https://www.danilodemarco.com/wp-content/themes/personal/js/hover.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149344189-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-
-    <title></title>
+      gtag('config', 'UA-149344189-1');
+    </script>
+     <!-- load script -->
+     <link rel="stylesheet" href="/css/style.min.css">
   </head>
-  <body>
+
+  <body data-rsss1="1" class="load">
+    <div id="loading">
+      <h2></h2>
+      <div id="image_load">
+        <img class="active" src="https://www.danilodemarco.com/wp-content/themes/personal/img/load/occhio.svg">
+        <img src="https://www.danilodemarco.com/wp-content/themes/personal/img/load/cuore.svg">
+        <img src="https://www.danilodemarco.com/wp-content/themes/personal/img/load/dea.svg">
+      </div>
+    </div>
+
+    <div id="transition">
+      <div id="image_tran">
+        <img class="active" src="https://www.danilodemarco.com/wp-content/themes/personal/img/load/occhio.svg">
+        <img src="https://www.danilodemarco.com/wp-content/themes/personal/img/load/cuore.svg">
+        <img src="https://www.danilodemarco.com/wp-content/themes/personal/img/load/dea.svg">
+      </div>
+    </div>
+
+    <div class="cursor">
+      <div id="data_cursor">
+        <span id="drag_d">Drag and Drop</span>
+        <span id="view">View work</span>
+        <span id="external">External link</span>
+      </div>
+    </div>
+
+    <div class="cursor2"></div>
+
+    <div id="page">
+      <div class="site-content">
+        <header id="header">
+          <h1 id="titolo_sito">
+            <p><span>Creative Director</span></p>
+            <p><span>Graphic Designer</span></p>
+            <p><span>Type Designer</span></p>
+            <p><span>UI Designer</span></p>
+          </h1>
+
+          <div id="image_cuore">
+            <img alt="Danilo De Marco - Heart" class="active" src="https://www.danilodemarco.com/wp-content/themes/personal/img/load/cuore.svg">
+            <img alt="Danilo De Marco - Nino Martoglio" src="https://www.danilodemarco.com/wp-content/themes/personal/img/load/dea.svg">
+            <img alt="Danilo De Marco - Bauhaus" src="https://www.danilodemarco.com/wp-content/themes/personal/img/load/occhio.svg">
+          </div>
+
+          <a href="https://shervonrs.github.io/porfolio_1/" id="logo">
+            <img src="https://www.danilodemarco.com/wp-content/themes/personal/img/marchio.png"
+            alt="Danilo De Marco logo" class="imagelogo">
+          </a>
+
+          <p id="email"><span></span></p>
+
+          <ul id="social">
+            <li><a href="https://www.behance.net/onboarding/adobe" target="_blank">Behance</a></li>
+            <li><a href="https://dribbble.com/" target="_blank">Dribble</a></li>
+            <li><a href="https://the-dots.com/" target="_blank">The Dot</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"></a>Facebook</li>
+            <li><a href="https://www.instagram.com/?hl=en" target="_blank"></a>Instagram</li>
+          </ul>
+
+          <div id="rectangle_green">
+            <a id="about_me" href="about">
+              <img src="https://www.danilodemarco.com/wp-content/themes/personal/img/component/this_is_my_story.svg" alt="about me">
+              <img src="https://www.danilodemarco.com/wp-content/themes/personal/img/arrow_line.svg" alt="View About page">
+            </a>
+          </div>
+
+          <div id="scroll">
+            <span></span>
+            <div class="Scroll"></div>
+          </div>
+        </header>
+
+        <div id="work_1">
+          <h2 id="title_w">WORK</h2>
+          <div class="work">
+            <a href="#">
+              <h2>
+                I Diritti dell&#8217;Ump<br> 2007-2018        </h2>
+              <div id="canvas1">
+                <div class="copri"><span></span></div>
+
+                <div class="cont_img">
+
+                  <img src="https://www.danilodemarco.com/wp-content/uploads/2019/08/uni-1.jpg" class="image1 wp-post-image"
+                  alt="I Diritti dell&#8217;Ump 2007- 2018" srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/uni-1.jpg 1600w,
+                  https://www.danilodemarco.com/wp-content/uploads/2019/08/uni-1-300x169.jpg 300w, https://www.danilodemarco.com/wp-content/uploads/2019/08/uni-1-768x432.jpg 768w,
+                  https://www.danilodemarco.com/wp-content/uploads/2019/08/uni-1-1024x576.jpg 1024w,
+                  https://www.danilodemarco.com/wp-content/uploads/2019/08/uni-1-1200x675.jpg 1200w"
+                  sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />
+                  </div>
+
+              </div>
+            </a>
+
+            <p class="category">Design catalogue</p>
+          </div>
+        </div>
+
+        <div id="work_2" class="right">
+          <div class="work">
+            <a href="#">
+              <h2>
+                Compagnia Teatrale Nino Martoglio &#8211; 2018/2019        </h2>
+              <div id="canvas2">
+                <div class="copri"><span></span></div>
+
+                <div class="cont_img">
+
+                  <img src="https://www.danilodemarco.com/wp-content/uploads/2019/08/cover-10.jpg" class="image2 wp-post-image"
+                  alt="Compagnia Teatrale Nino Martoglio &#8211; 2018/2019" srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/cover-10.jpg 1600w,
+                   https://www.danilodemarco.com/wp-content/uploads/2019/08/cover-10-300x169.jpg 300w, https://www.danilodemarco.com/wp-content/uploads/2019/08/cover-10-768x432.jpg 768w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/cover-10-1024x576.jpg 1024w, https://www.danilodemarco.com/wp-content/uploads/2019/08/cover-10-1200x675.jpg 1200w"
+                    sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />
+                  </div>
+
+              </div>
+            </a>
+
+            <p class="category">Visual Identity</p>
+          </div>
+        </div>
+
+        <div id="work_3">
+          <div class="work">
+            <a href="#">
+              <h2>
+                Contemporary Modern Art Auction       </h2>
+              <div id="canvas3">
+                <div class="copri"><span></span></div>
+
+                <div class="cont_img">
+
+                  <img src="https://www.danilodemarco.com/wp-content/uploads/2019/08/cover_pp.jpg" class="image3 wp-post-image"
+                  alt="Contemporary Modern Art Auction" srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/cover_pp.jpg 1500w,
+                  https://www.danilodemarco.com/wp-content/uploads/2019/08/cover_pp-300x169.jpg 300w, https://www.danilodemarco.com/wp-content/uploads/2019/08/cover_pp-768x432.jpg 768w,
+                  https://www.danilodemarco.com/wp-content/uploads/2019/08/cover_pp-1024x576.jpg 1024w, https://www.danilodemarco.com/wp-content/uploads/2019/08/cover_pp-1200x675.jpg 1200w"
+                  sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />
+                  </div>
+
+              </div>
+            </a>
+
+            <p class="category">Exhibition Identity</p>
+          </div>
+        </div>
+
+        <div id="work_4" class="right">
+          <div class="work">
+            <a href="#">
+              <h2>
+                Twelve stories<br> of Corfu        </h2>
+              <div id="canvas4">
+                <div class="copri"><span></span></div>
+
+                <div class="cont_img">
+
+                  <img src="https://www.danilodemarco.com/wp-content/uploads/2019/08/book_22.jpg" class="image4 wp-post-image"
+                  alt="Twelve stories of Corfu" srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/book_22.jpg 1920w,
+                  https://www.danilodemarco.com/wp-content/uploads/2019/08/book_22-300x169.jpg 300w, https://www.danilodemarco.com/wp-content/uploads/2019/08/book_22-768x432.jpg 768w,
+                  https://www.danilodemarco.com/wp-content/uploads/2019/08/book_22-1024x576.jpg 1024w, https://www.danilodemarco.com/wp-content/uploads/2019/08/book_22-1200x675.jpg 1200w"
+                  sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" />
+                  </div>
+
+              </div>
+            </a>
+
+            <p class="category">Editorial Design</p>
+          </div>
+        </div>
+
+        <div class="poster">
+          <div id="cont_s">
+            <h2>
+              <span class="poster_title">Poster.</span>
+
+
+
+              <span><a id="5" href="#">Hip Hop</a></span><span><a id="6" href="#">L.A.</a></span>
+              <span class="active first"><a href="#" id="1">Bauhas</a></span><span><a href="#" id="2">Social</a></span>
+              <span><a href="#" id="3">Crazy Genius</a></span><span> <a href="#" id="4">Herbert</a></span>
+              <span> <a href="#" id="5">Hip Hop</a></span><span class="last"><a href="#" id="6">L.A.</a></span>
+              <span> <a id="1" href="#">Bauhaus</a></span> <span><a id="2" href="#">Social</a></span>
+            </h2>
+          </div>
+          <div class="content">
+            <div class="glide">
+              <div class="clide_track" data-glide-el="track">
+                <ul class="glide_slides">
+                  <li data-title="Bauhas" class="glide_slide"><a data-id="1" class="link_f"
+                    href="#"><div><img width="1600" height="2286" src="https://www.danilodemarco.com/wp-content/uploads/2019/08/1-4-1.jpg"
+                    class="attachment-full size-full" alt="Bauhas Poster serie - The Surrealist B"
+                    srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/1-4-1.jpg 1600w, https://www.danilodemarco.com/wp-content/uploads/2019/08/1-4-1-210x300.jpg 210w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/1-4-1-768x1097.jpg 768w, https://www.danilodemarco.com/wp-content/uploads/2019/08/1-4-1-717x1024.jpg 717w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/1-4-1-1200x1715.jpg 1200w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></div></a></li>
+                  <li data-title="Social" class="glide_slide"><a data-id="2" class="link_f"
+                    href="#"><div><img width="768" height="1075" src="https://www.danilodemarco.com/wp-content/uploads/2019/08/friends.jpg"
+                    class="attachment-full size-full" alt="Social Poster - Dog, best human friends - Designed by Danilo De Marco"
+                    srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/friends.jpg 768w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/friends-214x300.jpg 214w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/friends-732x1024.jpg 732w"
+                    sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px" /></div></a></li>
+                  <li data-title="Crazy Genius" class="glide_slide"><a data-id="3" class="link_f"
+                    href="#"><div><img width="768" height="1097" src="https://www.danilodemarco.com/wp-content/uploads/2019/08/crazy-768x1097-1.jpg"
+                    class="attachment-full size-full" alt="Crazy Genious - Poster Serie - Designed by Danilo De Marco"
+                    srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/crazy-768x1097-1.jpg 768w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/crazy-768x1097-1-210x300.jpg 210w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/crazy-768x1097-1-717x1024.jpg 717w"
+                    sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px" /></div></a></li>
+                  <li data-title="Herbert" class="glide_slide"><a data-id="4" class="link_f"
+                    href="#"><div><img width="1000" height="1427" src="https://www.danilodemarco.com/wp-content/uploads/2019/08/Poster_Tavola-disegno-1-copia-10-1.jpg"
+                    class="attachment-full size-full" alt="Herbert Poster Serie - Heart - Designed by Danilo De Marco" srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/Poster_Tavola-disegno-1-copia-10-1.jpg 1000w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/Poster_Tavola-disegno-1-copia-10-1-210x300.jpg 210w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/Poster_Tavola-disegno-1-copia-10-1-768x1096.jpg 768w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/Poster_Tavola-disegno-1-copia-10-1-718x1024.jpg 718w"
+                    sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></div></a></li>
+                  <li data-title="Hip Hop" class="glide_slide"><a data-id="5" class="link_f"
+                    href="#"><div><img width="768" height="1097" src="https://www.danilodemarco.com/wp-content/uploads/2019/08/bigpac-1.jpg"
+                    class="attachment-full size-full" alt="Hip Hop Posters serie - Big and Pac"
+                    srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/bigpac-1.jpg 768w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/bigpac-1-210x300.jpg 210w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/bigpac-1-717x1024.jpg 717w"
+                    sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw,
+                    (max-width: 1362px) 45vw, 600px" /></div></a></li>
+                  <li data-title="L.A." class="glide_slide"><a data-id="6" class="link_f"
+                    href="#"><div><img width="768" height="1084" src="https://www.danilodemarco.com/wp-content/uploads/2019/08/1-6.jpg"
+                    class="attachment-full size-full" alt="Los Angeles - Poster Serie - Designed by Danilo De Marco"
+                    srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/1-6.jpg 768w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/1-6-213x300.jpg 213w,
+                    https://www.danilodemarco.com/wp-content/uploads/2019/08/1-6-725x1024.jpg 725w"
+                    sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px"  /></div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="logos" class="content2">
+          <h2>Logos <br> & Brands</h2>
+          <svg class="distort" width="490" height="350" viewBox="0 0 490 350">
+            <filter id="distortionFilter">
+              <feTurbulence type="fractalNoise" baseFrequency="0.01 0.003" numOctaves="5"
+              seed="2" stitchTiles="noStitch" x="0%" y="0%" width="100%" height="100%" result="noise"/>
+              <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%"
+              y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"/>
+            </filter>
+            <g filter="url(#distortionFilter)">
+
+              <image class="distort_img" x="50" y="50" xlink:href="https://www.danilodemarco.com/wp-content/uploads/2019/08/metroxx-1024x576.jpg"
+              height="350" width="490"/>
+              <image class="distort_img" x="50" y="50" xlink:href="https://www.danilodemarco.com/wp-content/uploads/2019/08/cover-7-1-1024x576.jpg"
+              height="350" width="490"/>
+              <image class="distort_img" x="50" y="50" xlink:href="https://www.danilodemarco.com/wp-content/uploads/2019/08/cover-6-1024x576-1024x576.jpg"
+              height="350" width="490"/>
+              <image class="distort_img" x="50" y="50" xlink:href="https://www.danilodemarco.com/wp-content/uploads/2019/08/cover-4-1024x576.jpg"
+              height="350" width="490"/>
+
+              ?>
+            </g>
+          </svg>
+
+          <nav class="menu">
+            <ul>
+              <li><a href="#" class=menu_link"">Subway</a></li>
+              <li><a href="#" class=menu_link"">Ortovivo</a></li>
+              <li><a href="#" class=menu_link"">K95y</a></li>
+              <li><a href="#" class=menu_link"">Roberto Grill</a></li>
+            </ul>
+
+          </nav>
+        </div>
+
+        <div id="type">
+          <div id="title_type">
+            <h2><span>Type</span><span>Type</span></h2>
+          </div>
+
+          <div id="cont_type">
+            <div id="herbert">
+              <img src="https://www.danilodemarco.com/wp-content/themes/personal/img/herbert.svg"
+              alt="Danilo De Marco e K95 - Herbert Typeface" class="type_1">
+
+              <div class="cont_data">
+                <div class="data">
+                  <h3><span>Herbert Typeface</span></h3>
+                  <a href="#"><span>Buy font</span></a>
+                </div>
+
+                <div class="line">
+                  <span></span>
+                </div>
+
+                <div class="data">
+                  <p>Year. 2019 <br>
+                  Designed by <strong> Danilo De Marco</strong><br>
+                for <strong> Studio K95</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <div id="k95alphabet">
+              <img src="https://www.danilodemarco.com/wp-content/themes/personal/img/k95_alphabet.svg"
+              alt="Danilo De Marco e Guila Gambino - k95 Alphabet" class="type_1">
+
+              <div class="cont_data">
+                <div class="data">
+                  <h3><span>K95 Alphabet</span></h3>
+                  <a href="#"><span>Download font</span></a>
+                </div>
+
+                <div class="line">
+                  <span></span>
+                </div>
+
+                <div class="data">
+                  <p>Year. 2018 <br>
+                  Designed by <strong> Danilo De Marco</strong><br> and <strong> Guilia Gambino</strong><br>
+                for <strong> Studio K95</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <div id="agane">
+              <img src="https://www.danilodemarco.com/wp-content/themes/personal/img/agane.svg"
+              alt="Danilo De Marco e K95 - Aganè Typeface" class="type_1">
+
+              <div class="cont_data">
+                <div class="data">
+                  <h3><span>Agane</span></h3>
+                  <a href="#"><span>Download font</span></a>
+                </div>
+
+                <div class="line">
+                  <span></span>
+                </div>
+
+                <div class="data">
+                  <p>Year. 2017 <br>
+                  Designed by <strong> Danilo De Marco</strong><br>
+                 <strong> Personal Project</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer id="close">
+          <div class="left">
+            <div id="cont_occhio">
+              <span id="fascia"></span>
+              <div id="image_close"><img src="https://www.danilodemarco.com/wp-content/themes/personal/img/occhio_footer.svg" alt="Contacts" class="active">
+              </div>
+            </div>
+          </div>
+
+          <div class="left" id="contact">
+            <p>
+              Personal - Contact<br>
+              <a class="about" href="#">About me</a><br>
+              165-800-0978<br>
+            </p>
+
+            <p>
+              K-87 - Life<br>
+              44556 Main Street<br>
+              Baltimore, Maryland
+            </p>
+          </div>
+
+          <div id="bar_bottom">
+            <ul class="left">
+              <li><a href="https://www.behance.net/onboarding/adobe" target="_blank">Behance</a></li>
+              <li><a href="https://dribbble.com/" target="_blank">Dribble</a></li>
+              <li><a href="https://the-dots.com/" target="_blank">The Dot</a></li>
+              <li class="trattino"></li>
+              <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+              <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
+            </ul>
+
+            <ul class="right">
+              <li><a target="_blank" href="#">k95.it</a></li>
+              <li>-</li>
+              <li><a target="_blank" href="#">Shop.k95.it</a></li>
+            </ul>
+          </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script src="js/script.js"></script>
+
+      </div>
+    </div>
+
+    <!-- <link rel="stylesheet" href="/css/master.css"> -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/Glide.js/3.3.0/css/glide.core.css">
+    <link rel="stylesheet" href="https://www.danilodemarco.com/wp-content/themes/personal/js/sliderposter/slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <script src="https://www.danilodemarco.com/wp-content/themes/personal/js/modernizr.custom.min.js"></script>
+    <script src="https://www.danilodemarco.com/wp-content/themes/personal/js/jquery.smoothState.min.js"></script>
+    <script src="https://www.danilodemarco.com/wp-content/themes/personal/js/anime.min.js"></script>
 
   </body>
 </html>
