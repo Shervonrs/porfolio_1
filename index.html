@@ -12,8 +12,8 @@
 
     <script  src="https://www.danilodemarco.com/wp-content/themes/personal/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script scr="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://www.danilodemarco.com/wp-content/themes/personal/js/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://www.danilodemarco.com/wp-content/themes/personal/js/smooth-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
@@ -29,7 +29,7 @@
       gtag('config', 'UA-149344189-1');
     </script>
      <!-- load script -->
-     <link rel="stylesheet" href="/css/style.min.css">
+     <link rel="stylesheet" href="/dist/styles.css">
   </head>
 
   <body data-rsss1="1" class="load">
@@ -87,14 +87,14 @@
             <li><a href="https://www.behance.net/onboarding/adobe" target="_blank">Behance</a></li>
             <li><a href="https://dribbble.com/" target="_blank">Dribble</a></li>
             <li><a href="https://the-dots.com/" target="_blank">The Dot</a></li>
-            <li><a href="https://www.facebook.com/" target="_blank"></a>Facebook</li>
-            <li><a href="https://www.instagram.com/?hl=en" target="_blank"></a>Instagram</li>
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a></li>
           </ul>
 
           <div id="rectangle_green">
             <a id="about_me" href="about">
               <img src="https://www.danilodemarco.com/wp-content/themes/personal/img/component/this_is_my_story.svg" alt="about me">
-              <img src="https://www.danilodemarco.com/wp-content/themes/personal/img/arrow_line.svg" alt="View About page">
+              <img id="arrow_about" src="https://www.danilodemarco.com/wp-content/themes/personal/img/arrow_line.svg" alt="View About page">
             </a>
           </div>
 
@@ -182,7 +182,7 @@
           <div class="work">
             <a href="#">
               <h2>
-                Twelve stories<br> of Corfu        </h2>
+                Twelve stories<br> of Corfu       </h2>
               <div id="canvas4">
                 <div class="copri"><span></span></div>
 
@@ -202,7 +202,7 @@
           </div>
         </div>
 
-        <div class="poster">
+        <div id="poster">
           <div id="cont_s">
             <h2>
               <span class="poster_title">Poster.</span>
@@ -218,36 +218,36 @@
           </div>
           <div class="content">
             <div class="glide">
-              <div class="clide_track" data-glide-el="track">
-                <ul class="glide_slides">
-                  <li data-title="Bauhas" class="glide_slide"><a data-id="1" class="link_f"
+              <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                  <li data-title="Bauhaus" class="glide__slide"><a data-id="1" class="link_f"
                     href="#"><div><img width="1600" height="2286" src="https://www.danilodemarco.com/wp-content/uploads/2019/08/1-4-1.jpg"
                     class="attachment-full size-full" alt="Bauhas Poster serie - The Surrealist B"
                     srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/1-4-1.jpg 1600w, https://www.danilodemarco.com/wp-content/uploads/2019/08/1-4-1-210x300.jpg 210w,
                     https://www.danilodemarco.com/wp-content/uploads/2019/08/1-4-1-768x1097.jpg 768w, https://www.danilodemarco.com/wp-content/uploads/2019/08/1-4-1-717x1024.jpg 717w,
                     https://www.danilodemarco.com/wp-content/uploads/2019/08/1-4-1-1200x1715.jpg 1200w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></div></a></li>
-                  <li data-title="Social" class="glide_slide"><a data-id="2" class="link_f"
+                  <li data-title="Social" class="glide__slide"><a data-id="2" class="link_f"
                     href="#"><div><img width="768" height="1075" src="https://www.danilodemarco.com/wp-content/uploads/2019/08/friends.jpg"
                     class="attachment-full size-full" alt="Social Poster - Dog, best human friends - Designed by Danilo De Marco"
                     srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/friends.jpg 768w,
                     https://www.danilodemarco.com/wp-content/uploads/2019/08/friends-214x300.jpg 214w,
                     https://www.danilodemarco.com/wp-content/uploads/2019/08/friends-732x1024.jpg 732w"
                     sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px" /></div></a></li>
-                  <li data-title="Crazy Genius" class="glide_slide"><a data-id="3" class="link_f"
+                  <li data-title="Crazy Genius" class="glide__slide"><a data-id="3" class="link_f"
                     href="#"><div><img width="768" height="1097" src="https://www.danilodemarco.com/wp-content/uploads/2019/08/crazy-768x1097-1.jpg"
                     class="attachment-full size-full" alt="Crazy Genious - Poster Serie - Designed by Danilo De Marco"
                     srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/crazy-768x1097-1.jpg 768w,
                     https://www.danilodemarco.com/wp-content/uploads/2019/08/crazy-768x1097-1-210x300.jpg 210w,
                     https://www.danilodemarco.com/wp-content/uploads/2019/08/crazy-768x1097-1-717x1024.jpg 717w"
                     sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px" /></div></a></li>
-                  <li data-title="Herbert" class="glide_slide"><a data-id="4" class="link_f"
+                  <li data-title="Herbert" class="glide__slide"><a data-id="4" class="link_f"
                     href="#"><div><img width="1000" height="1427" src="https://www.danilodemarco.com/wp-content/uploads/2019/08/Poster_Tavola-disegno-1-copia-10-1.jpg"
                     class="attachment-full size-full" alt="Herbert Poster Serie - Heart - Designed by Danilo De Marco" srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/Poster_Tavola-disegno-1-copia-10-1.jpg 1000w,
                     https://www.danilodemarco.com/wp-content/uploads/2019/08/Poster_Tavola-disegno-1-copia-10-1-210x300.jpg 210w,
                     https://www.danilodemarco.com/wp-content/uploads/2019/08/Poster_Tavola-disegno-1-copia-10-1-768x1096.jpg 768w,
                     https://www.danilodemarco.com/wp-content/uploads/2019/08/Poster_Tavola-disegno-1-copia-10-1-718x1024.jpg 718w"
                     sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></div></a></li>
-                  <li data-title="Hip Hop" class="glide_slide"><a data-id="5" class="link_f"
+                  <li data-title="Hip Hop" class="glide__slide"><a data-id="5" class="link_f"
                     href="#"><div><img width="768" height="1097" src="https://www.danilodemarco.com/wp-content/uploads/2019/08/bigpac-1.jpg"
                     class="attachment-full size-full" alt="Hip Hop Posters serie - Big and Pac"
                     srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/bigpac-1.jpg 768w,
@@ -255,7 +255,7 @@
                     https://www.danilodemarco.com/wp-content/uploads/2019/08/bigpac-1-717x1024.jpg 717w"
                     sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw,
                     (max-width: 1362px) 45vw, 600px" /></div></a></li>
-                  <li data-title="L.A." class="glide_slide"><a data-id="6" class="link_f"
+                  <li data-title="L.A." class="glide__slide"><a data-id="6" class="link_f"
                     href="#"><div><img width="768" height="1084" src="https://www.danilodemarco.com/wp-content/uploads/2019/08/1-6.jpg"
                     class="attachment-full size-full" alt="Los Angeles - Poster Serie - Designed by Danilo De Marco"
                     srcset="https://www.danilodemarco.com/wp-content/uploads/2019/08/1-6.jpg 768w,
@@ -417,19 +417,17 @@
             </ul>
           </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-        <script src="js/script.js"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
       </div>
     </div>
 
     <!-- <link rel="stylesheet" href="/css/master.css"> -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/Glide.js/3.3.0/css/glide.core.css">
-    <link rel="stylesheet" href="https://www.danilodemarco.com/wp-content/themes/personal/js/sliderposter/slider.css">
+    <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/Glide.js/3.3.0/css/glide.core.css"> -->
+    <!-- <link rel="stylesheet" href="https://www.danilodemarco.com/wp-content/themes/personal/js/sliderposter/slider.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <script src="https://www.danilodemarco.com/wp-content/themes/personal/js/modernizr.custom.min.js"></script>
     <script src="https://www.danilodemarco.com/wp-content/themes/personal/js/jquery.smoothState.min.js"></script>
     <script src="https://www.danilodemarco.com/wp-content/themes/personal/js/anime.min.js"></script>
-
+    <script src="dist/bundle.js"></script>
   </body>
 </html>
